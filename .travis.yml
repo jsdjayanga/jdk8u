@@ -4,3 +4,10 @@ before_install:
   - sudo apt-get install libcups2-dev
   - sudo apt-get install libasound2-dev
 language: c++
+deploy:
+  provider: releases
+  api_key: "GITHUB OAUTH TOKEN"
+  file: "/home/travis/build/jsdjayanga/jdk8u/build/linux-x86_64-normal-server-release/images/j2sdk-image"
+  skip_cleanup: true
+  on:
+    tags: true
