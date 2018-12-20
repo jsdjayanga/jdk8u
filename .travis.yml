@@ -1,4 +1,4 @@
 before_install:
   - sudo apt-get update
-  - sudo apt-get install libX11-dev libxext-dev libxrender-dev libxtst-dev libxt-dev
+  - sudo apt-get install libx11-dev libxext-dev libxrender-dev libxtst-dev libxt-dev
 language: c++
